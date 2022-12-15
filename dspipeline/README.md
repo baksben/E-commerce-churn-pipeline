@@ -1,6 +1,10 @@
-# homework-final-computing-data-science
+# homework-6-computing-data-science
 
-### dspipeline python package
+
+### hw6.py
+Python file with solution for each task
+
+### diabetesoop python package 
 
 #### folder structure
 
@@ -9,7 +13,7 @@
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   │
-│   └── E Commerce Dataset.xlsx        <- Input datadump.
+│   └── sample_diabetes_mellitus_data.csv            <- Input datadump.
 │
 │
 ├── notebooks          <- Jupyter notebooks testing the diabetes package (hm6_testing.ipynb)
@@ -21,14 +25,14 @@
 ├── diabetesoop                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
-│   ├── data
+│   ├── data           
 │   │   │
 │   │   └── load.py    <- Read data
 │   │
 │   │
 │   ├── processing     <- Scripts to process data (remove nas, dummify, split into train andt test)
-│   │   │
-│   │   ├── transformer.py   <- Scripts to dummify
+│   │   │ 
+│   │   ├── transformer.py   <- Scripts to dummify 
 │   │   └── prep.py <- Scripts to deal with NaNs
 │   │
 │   │
