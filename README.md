@@ -59,4 +59,4 @@ There is Model class which serves as a wrapper around scikit-learn models. Curre
 
 #### Evaluation
 
-There is Metric class with variious methods for each metrics. To develop new one developer should create relevant function add it to calculate_score method's score_dict object with key and value as reference pointer to the function. Also must specify in if else part whether it uses preicted probabilities or class to calculate metric.
+There is Metric class with various methods for each metrics. To develop new one developer should create relevant function add it to calculate_score method's score_dict object with key and value as reference pointer to the function. Also must specify in if else part whether it uses preicted probabilities or class to calculate metric.
