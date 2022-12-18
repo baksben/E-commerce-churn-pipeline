@@ -49,7 +49,7 @@
 
 There is parent class Preprocessor from which developer needs to inherit for a new subclass. Methods should be called according to functionality of subclass.
 
-#### Feature Generatos
+#### Feature Generator
 
 There is parent meta class Transformer from which developer needs to inherit for a new subclass. There is uniform method of generate that developer should create with functionality that subclass represents.
 
