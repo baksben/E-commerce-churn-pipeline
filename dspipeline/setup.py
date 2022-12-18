@@ -24,7 +24,7 @@ setup(
     author='Ben | David ',
     name='dspipeline',
     license='MIT',
-    packages=find_packages(where='diabetesoop', exclude=['tests']),
+    packages=find_packages(where='dspipeline', exclude=['tests']),
     # package_dir={'': 'diabetes'},
     install_requires=get_requirements(),
     setup_requires=['pytest-runner', 'wheel'],
