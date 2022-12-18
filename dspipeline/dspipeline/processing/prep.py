@@ -6,7 +6,6 @@ class Preprocessor:
     def __init__(self, data):
         self.data = data
 
-
 class DropNaNs(Preprocessor):
 
     def __init__(self, data, columns_l):

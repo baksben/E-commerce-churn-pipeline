@@ -56,4 +56,23 @@ class Model:
             raise Exception('Please provide feature and target names of columns from dataframe provided!!!')
 
         # predict model
+        return self.model.predict(X_dataframe)
+
+    def predict_proba(self, dataframe):
+        '''Train a model
+
+        Args:
+            dataframe (pd.DataFrame): input dataframe
+        
+        Returns:
+            preds (np.array): results from predict_proba()
+        '''
+        # set feature and target objects from dataframe
+        try:
+            X_dataframe = dataframe[self._feature_columns]
+            y_dataframe = dataframe[self._target_column]
+        except KeyError:
+            raise Exception('Please provide feature and target names of columns from dataframe provided!!!')
+
+        # predict model
         return self.model.predict_proba(X_dataframe)

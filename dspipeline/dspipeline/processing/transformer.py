@@ -1,6 +1,7 @@
-'''Dummify data points
+'''Feature generation
 '''
 import pandas as pd
+import numpy as np
 from abc import ABCMeta, abstractmethod
 
 
@@ -55,3 +56,23 @@ class Binarizer(Transformer):
             return proc_data
         except KeyError:
             raise Exception ('Please make sure columns exist in your data!!')       
+    
+         
+class Logger(Transformer):
+
+    def __init__(self, data, column_name):
+        super().__init__(data)
+        self.column_name = column_name
+
+    def generate(self):
+        '''Generate logged variable
+        
+        Return:
+            proc_data pd.DataFrame: processed dataframe
+        '''
+        try:
+            proc_data = self.data.copy()
+            proc_data[self.column_name + '_logged'] = np.log(proc_data[self.column_name])
+            return proc_data
+        except KeyError:
+            raise Exception ('Please make sure columns exist in your data!!') 
