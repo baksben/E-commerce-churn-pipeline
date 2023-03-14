@@ -1,4 +1,4 @@
-# homework-final-computing-data-science
+# E-commerce churn pipeline
 
 ### dspipeline python package
 
